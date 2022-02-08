@@ -6,7 +6,7 @@
 /*ELEMENTOS BASE*/
 body{
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -57,6 +57,7 @@ header nav a:hover{
     margin-bottom: 40px;
 }
 
+
 .titulo{
     margin-top: 15%;
     font-size: 40px;
@@ -73,10 +74,11 @@ header nav a:hover{
     font-size: 12;
     
     cursor: pointer;
-    transition: .3s ease all;
+    transition: all 0.3s ease;
 }
 
-.botao:rover{
+.botao:hover{
+    transform: scale(1.1);
     background-color: white;
     color: black;
 }
@@ -91,12 +93,29 @@ header nav a:hover{
 
 .filme-principal .container{
     width: 70%;
+    padding-bottom: 5%;
 }
 
 .box-filme{
     height: 100%;
     width: 18%;
     display: block;
+    padding: 2%;
 
 }
 
+img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+img:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
